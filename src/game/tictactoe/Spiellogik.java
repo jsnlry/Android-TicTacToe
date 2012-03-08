@@ -112,6 +112,15 @@ public class Spiellogik {
 		return false;
 	}
 
+	/**
+	 * Returns the current state of the board.
+	 * 
+	 * @return An array with exactly 9 fields of type {@link Player}. Each field
+	 * represents a field of the board where the field at index 3 is the first 
+	 * field of the second row, the field with index 7 is the second field in 
+	 * the bottom row and so on. If a field's value is null, the field of the
+	 * board has not been ticked yet, otherwise the array contains the player.
+	 */
 	public Player[] getBoard() {
                 Player[] pboard = new Player[board.length];
                 for (int i = 0; i < board.length; i++) {
